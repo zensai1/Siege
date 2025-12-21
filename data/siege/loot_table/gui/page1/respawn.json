@@ -1,0 +1,49 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:end_crystal",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "item_name",
+              "name": {
+                "text": "リスポーン時間設定",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "現在の設定：",
+                  "color": "green",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "storage": "siege:",
+                      "nbt": "Setting.Respawn",
+                      "source": "storage",
+                      "extra": [
+                        {
+                          "text": "秒"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

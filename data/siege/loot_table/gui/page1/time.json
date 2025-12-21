@@ -1,0 +1,49 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "item_name",
+              "name": {
+                "text": "残り時間設定",
+                "color": "aqua",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "現在の設定：",
+                  "color": "green",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "storage": "siege:",
+                      "nbt": "Setting.Time",
+                      "source": "storage",
+                      "extra": [
+                        {
+                          "text": "秒"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

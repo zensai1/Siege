@@ -1,0 +1,84 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_wool",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "target": "item_name",
+              "name": {
+                "text": "コア体力設定",
+                "color": "light_purple",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "赤のコアの体力：",
+                  "extra": [
+                    {
+                      "nbt": "Setting.RedHealth",
+                      "storage": "siege:",
+                      "source": "storage"
+                    }
+                  ],
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "text": "青のコアの体力：",
+                  "extra": [
+                    {
+                      "nbt": "Setting.BlueHealth",
+                      "storage": "siege:",
+                      "source": "storage"
+                    }
+                  ],
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "緑のコアの体力：",
+                  "extra": [
+                    {
+                      "nbt": "Setting.GreenHealth",
+                      "storage": "siege:"
+                    }
+                  ],
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "黄のコアの体力：",
+                  "extra": [
+                    {
+                      "nbt": "Setting.YellowHealth",
+                      "storage": "siege:"
+                    }
+                  ],
+                  "color": "yellow",
+                  "italic": false
+                },
+                "  ",
+                {
+                  "text": "左クリックで詳細",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

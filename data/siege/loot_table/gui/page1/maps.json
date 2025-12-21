@@ -1,0 +1,55 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "MAP設定",
+                "type": "text",
+                "color": "blue",
+                "italic": false
+              },
+              "target": "custom_name"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "MAP：",
+                  "extra": [
+                    {
+                      "nbt": "SelectMap.Name",
+                      "storage": "siege:",
+                      "interpret": true,
+                      "italic": false
+                    }
+                  ],
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "左クリックで詳細",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": []
+}
