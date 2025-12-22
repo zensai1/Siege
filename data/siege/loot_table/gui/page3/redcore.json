@@ -5,14 +5,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:redstone",
+          "name": "minecraft:red_wool",
           "functions": [
             {
               "function": "minecraft:set_name",
               "entity": "this",
               "target": "item_name",
               "name": {
-                "text": "2チーム分け",
+                "text": "赤のコアの体力",
                 "color": "red",
                 "italic": false
               }
@@ -22,9 +22,15 @@
               "entity": "this",
               "lore": [
                 {
-                  "text": "クリックで振り分け",
-                  "color": "gray",
-                  "italic": false
+                  "text": "現在の設定：",
+                  "color": "gold",
+                  "italic": false,
+                  "extra": [
+                    {
+                      "storage": "siege:",
+                      "nbt": "Setting.RedHealth"
+                    }
+                  ]
                 }
               ],
               "mode": "replace_all"

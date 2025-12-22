@@ -27,16 +27,16 @@
 
 ##MAP
     execute as @s[nbt=!{Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:13b}]}] run scoreboard players add *** Znsi.SelectMap 1
-    execute as @s[nbt=!{Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:13b}]}] if score *** Znsi.SelectMap matches 6.. run scoreboard players set *** Znsi.SelectMap 1
-    execute as @s[nbt=!{Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:13b}]}] run function siege:gui/page1/map_update
+    execute as @s[nbt=!{Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:13b}]}] if score *** Znsi.SelectMap matches 3.. run scoreboard players set *** Znsi.SelectMap 1
 
 
 ##TEAM
     execute as @s[nbt=!{Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:14b}]}] run scoreboard players add *** Znsi.TeamMode 1
     execute as @s[nbt=!{Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:14b}]}] if score *** Znsi.TeamMode matches 4.. run scoreboard players set *** Znsi.TeamMode 1
-    execute as @s[nbt=!{Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:14b}]}] run function siege:gui/page1/team_update
 
 
 ##内部処理
     execute at @s run playsound minecraft:block.dispenser.dispense record @s ~ ~ ~ 1 1.5
     function siege:gui/page1/
+    function siege:gui/page1/team_update
+    function siege:gui/page1/map_update

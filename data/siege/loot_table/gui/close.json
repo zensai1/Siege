@@ -5,24 +5,32 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:redstone",
+          "name": "minecraft:barrier",
           "functions": [
             {
               "function": "minecraft:set_name",
               "entity": "this",
-              "target": "item_name",
               "name": {
-                "text": "2チーム分け",
-                "color": "red",
+                "text": "閉じる",
+                "type": "text",
+                "color": "white",
                 "italic": false
-              }
+              },
+              "target": "custom_name"
             },
             {
               "function": "minecraft:set_lore",
               "entity": "this",
               "lore": [
                 {
-                  "text": "クリックで振り分け",
+                  "text": "左クリックで使用",
+                  "type": "text",
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "前のページに戻ります。",
+                  "type": "text",
                   "color": "gray",
                   "italic": false
                 }
@@ -33,5 +41,6 @@
         }
       ]
     }
-  ]
+  ],
+  "functions": []
 }

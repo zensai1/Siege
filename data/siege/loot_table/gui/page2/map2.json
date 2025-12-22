@@ -1,0 +1,203 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "MAP2",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "MAP：",
+                  "extra": [
+                    {
+                      "storage": "siege:",
+                      "nbt": "Setting.Map2.Name",
+                      "interpret": true
+                    }
+                  ],
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": " "
+                },
+                {
+                  "text": "赤チーム：",
+                  "extra": [
+                    {
+                      "nbt": "Setting.Map2.RedPos.x",
+                      "storage": "siege:",
+                      "source": "storage",
+                      "extra": [
+                        {
+                          "text": ",",
+                          "color": "gray"
+                        },
+                        {
+                          "nbt": "Setting.Map2.RedPos.y",
+                          "storage": "siege:",
+                          "source": "storage",
+                          "extra": [
+                            {
+                              "text": ",",
+                              "extra": [
+                                {
+                                  "nbt": "Setting.Map2.RedPos.z",
+                                  "storage": "siege:",
+                                  "source": "storage",
+                                  "color": "red"
+                                }
+                              ],
+                              "color": "gray"
+                            }
+                          ]
+                        }
+                      ],
+                      "italic": false
+                    }
+                  ],
+                  "color": "red",
+                  "italic": false
+                },
+                {
+                  "text": "青チーム：",
+                  "extra": [
+                    {
+                      "nbt": "Setting.Map2.BluePos.x",
+                      "storage": "siege:",
+                      "source": "storage",
+                      "extra": [
+                        {
+                          "text": ",",
+                          "extra": [
+                            {
+                              "nbt": "Setting.Map2.BluePos.y",
+                              "storage": "siege:",
+                              "source": "storage",
+                              "extra": [
+                                {
+                                  "text": ",",
+                                  "extra": [
+                                    {
+                                      "nbt": "Setting.Map2.BluePos.z",
+                                      "storage": "siege:",
+                                      "source": "storage",
+                                      "color": "blue"
+                                    }
+                                  ],
+                                  "color": "gray"
+                                }
+                              ],
+                              "color": "blue"
+                            }
+                          ],
+                          "color": "gray"
+                        }
+                      ]
+                    }
+                  ],
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "緑チーム：",
+                  "extra": [
+                    {
+                      "nbt": "Setting.Map2.GreenPos.x",
+                      "storage": "siege:",
+                      "extra": [
+                        {
+                          "text": ",",
+                          "extra": [
+                            {
+                              "nbt": "Setting.Map2.GreenPos.y",
+                              "storage": "siege:",
+                              "source": "storage",
+                              "extra": [
+                                {
+                                  "text": ",",
+                                  "extra": [
+                                    {
+                                      "nbt": "Setting.Map2.GreenPos.z",
+                                      "storage": "siege:",
+                                      "source": "storage",
+                                      "color": "green"
+                                    }
+                                  ],
+                                  "color": "gray"
+                                }
+                              ],
+                              "color": "green"
+                            }
+                          ],
+                          "color": "gray"
+                        }
+                      ]
+                    }
+                  ],
+                  "color": "green",
+                  "italic": false
+                },
+                {
+                  "text": "黄チーム：",
+                  "extra": [
+                    {
+                      "nbt": "Setting.Map2.YellowPos.x",
+                      "storage": "siege:",
+                      "source": "storage",
+                      "extra": [
+                        {
+                          "text": ",",
+                          "extra": [
+                            {
+                              "nbt": "Setting.Map2.YellowPos.y",
+                              "storage": "siege:",
+                              "source": "storage",
+                              "extra": [
+                                {
+                                  "text": ",",
+                                  "extra": [
+                                    {
+                                      "nbt": "Setting.Map2.YellowPos.z",
+                                      "storage": "siege:",
+                                      "source": "storage",
+                                      "color": "yellow"
+                                    }
+                                  ],
+                                  "color": "gray"
+                                }
+                              ],
+                              "color": "yellow"
+                            }
+                          ],
+                          "color": "gray"
+                        }
+                      ]
+                    }
+                  ],
+                  "color": "yellow",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

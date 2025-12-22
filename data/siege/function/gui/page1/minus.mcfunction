@@ -27,16 +27,16 @@
 
 ##MAP
     execute as @s[nbt=!{Inventory:[{id:"minecraft:blue_stained_glass_pane",Slot:31b}]}] run scoreboard players remove *** Znsi.SelectMap 1
-    execute as @s[nbt=!{Inventory:[{id:"minecraft:blue_stained_glass_pane",Slot:31b}]}] if score *** Znsi.SelectMap matches ..-1 run scoreboard players set *** Znsi.SelectMap 5
-    execute as @s[nbt=!{Inventory:[{id:"minecraft:blue_stained_glass_pane",Slot:31b}]}] run function siege:gui/page1/map_update
+    execute as @s[nbt=!{Inventory:[{id:"minecraft:blue_stained_glass_pane",Slot:31b}]}] if score *** Znsi.SelectMap matches ..0 run scoreboard players set *** Znsi.SelectMap 2
 
 
 ##TEAM
     execute as @s[nbt=!{Inventory:[{id:"minecraft:blue_stained_glass_pane",Slot:32b}]}] run scoreboard players remove *** Znsi.TeamMode 1
-    execute as @s[nbt=!{Inventory:[{id:"minecraft:blue_stained_glass_pane",Slot:32b}]}] if score *** Znsi.TeamMode matches ..-1 run scoreboard players set *** Znsi.TeamMode 3
-    execute as @s[nbt=!{Inventory:[{id:"minecraft:blue_stained_glass_pane",Slot:32b}]}] run function siege:gui/page1/team_update
+    execute as @s[nbt=!{Inventory:[{id:"minecraft:blue_stained_glass_pane",Slot:32b}]}] if score *** Znsi.TeamMode matches ..0 run scoreboard players set *** Znsi.TeamMode 3
 
 
 ##内部処理
     execute at @s run playsound minecraft:block.dispenser.dispense record @s ~ ~ ~ 1 1.5
     function siege:gui/page1/
+    function siege:gui/page1/team_update
+    function siege:gui/page1/map_update

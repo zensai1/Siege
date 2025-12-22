@@ -1,0 +1,18 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "4チーム分け",
+      "color": "yellow",
+      "italic": false
+    },
+    "target": "custom_name"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "minecraft:sugar"
+    }
+  }
+]
