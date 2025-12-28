@@ -27,3 +27,4 @@
 
 ##元に戻す  
     function siege:gui/page3/
+    execute at @s run playsound minecraft:block.dispenser.dispense record @s ~ ~ ~ 1 1.5

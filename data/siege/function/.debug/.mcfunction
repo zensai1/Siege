@@ -1,0 +1,1 @@
+execute as @e[tag=RedRespawn] at @s positioned ~-10 ~-175 ~-10 as @a[dx=19,dy=349,dz=19] run say リスポ近いよ

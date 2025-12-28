@@ -1,9 +1,13 @@
 #>siege:loads/waiting
 
+##GAMERULES
+    gamerule locatorBar false
+    gamerule fallDamage false
 
 ##Scoreboards
     scoreboard objectives add Znsi.Info dummy {"color":"aqua","text":"Information"}
     scoreboard objectives add Znsi.Leave custom:leave_game "退室"
+    scoreboard objectives add Znsi.Reload dummy "Reloadまで"
     scoreboard objectives add Znsi.Page dummy "InventoryGUI管理"
     scoreboard objectives add Znsi.Health dummy "体力"
     scoreboard objectives add Znsi.Arrows dummy "矢の最大所持数"
@@ -11,6 +15,19 @@
     scoreboard objectives add Znsi.Time dummy "残り時間"
     scoreboard objectives add Znsi.SelectMap dummy "選択したMAP"
     scoreboard objectives add Znsi.TeamMode dummy "何チームで振り分けするか"
+    scoreboard objectives add Znsi.Rotate dummy "回転"
+    scoreboard objectives add Znsi.Death deathCount "死亡判定"
+    scoreboard objectives add Znsi.Tick dummy "tick"
+    scoreboard objectives add Znsi.Temp dummy "仮置き"
+
+    scoreboard objectives add Znsi.Use.Redcore used:red_wool "赤のコア設置"
+    scoreboard objectives add Znsi.Use.Bluecore used:blue_wool "青のコア設置"
+    scoreboard objectives add Znsi.Use.Greencore used:green_wool "緑のコア設置"
+    scoreboard objectives add Znsi.Use.Yellowcore used:yellow_wool "黄のコア設置"
+    scoreboard objectives add Znsi.Use.Bow used:bow "弓撃った"
+
+    scoreboard objectives add Znsi.Drop.Arrow dropped:arrow
+    scoreboard objectives add Znsi.Drop.Bow dropped:bow
 
 
 ##Teams
@@ -69,9 +86,3 @@
     scoreboard players set 青のコア： Znsi.Info -1
     scoreboard players set 緑のコア： Znsi.Info -2
     scoreboard players set 黄のコア： Znsi.Info -3
-    scoreboard players display numberformat 残り時間： Znsi.Info blank
-    scoreboard players display numberformat 準備時間： Znsi.Info blank
-    scoreboard players display numberformat 赤のコア： Znsi.Info blank
-    scoreboard players display numberformat 青のコア： Znsi.Info blank
-    scoreboard players display numberformat 緑のコア： Znsi.Info blank
-    scoreboard players display numberformat 黄のコア： Znsi.Info blank

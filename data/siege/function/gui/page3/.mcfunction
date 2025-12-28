@@ -3,6 +3,7 @@
 
 ##前処理する
     item replace entity @s player.cursor with air
+    execute unless score @s Znsi.Page matches 300 run playsound entity.arrow.hit_player record @s
 
 
 ##GUIをセットする

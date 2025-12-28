@@ -8,7 +8,7 @@
         execute as @a[tag=op] at @s if items entity @s player.cursor compass if score @s Znsi.Page matches 100 run function siege:gui/page2/
         execute as @a[tag=op] at @s if items entity @s player.cursor white_wool if score @s Znsi.Page matches 100 run function siege:gui/page3/
         execute as @a[tag=op] at @s if items entity @s player.cursor redstone if score @s Znsi.Page matches 100 run function siege:gui/page1/teams
-        execute as @a[tag=op] at @s if items entity @s player.cursor lantern if score @s Znsi.Page matches 100 run function siege:gui/page1/start
+        execute as @a[tag=op] at @s if items entity @s player.cursor lantern if score @s Znsi.Page matches 100 run function siege:gui/page1/start with storage siege: Setting.Lobby.Pos
 
 
     ##PAGE2
